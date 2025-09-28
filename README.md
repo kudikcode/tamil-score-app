@@ -3,11 +3,11 @@
 A tiny FastAPI web app that:
 1) listens to your microphone in the browser,
 2) uses **Sarvam AI** Speech-to-Text to transcribe Tamil / code-mixed speech,
-3) counts **English words** in the transcript,
+3) counts **Tamil Words(all non-english words)** in the transcript,
 4) computes `score = total_words_count / english_words_count`,
 5) shows everything in a simple UI.
 
-> ⚠️ If there are no English words, the score is shown as `∞ (no English words)`.
+> ⚠️ If there are no Tamil words, the score is shown as `∞ (no Tamil words)`.
 
 ---
 
@@ -45,7 +45,7 @@ open http://localhost:8000
 ## File Layout
 
 ```
-tamil-english-score-app/
+tamil-english-score-app/app
 ├─ main.py              # FastAPI app
 ├─ requirements.txt
 ├─ templates/
