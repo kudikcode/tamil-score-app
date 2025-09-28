@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tamil-English Score App</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tamil-English Score</h1>
+      <p class="subtitle">Press <b>Start</b>, speak in Tamil (code-mix allowed), then press <b>Stop & Analyze</b>.</p>
+
+      <div class="controls">
+        <button id="startBtn">🎙️ Start</button>
+        <button id="stopBtn" disabled>⏹️ Stop & Analyze</button>
+      </div>
+
+      <div id="status">Idle</div>
+
+      <section id="results" class="hidden">
+        <h2>Results</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="label">Transcript</div>
+            <pre id="transcript"></pre>
+          </div>
+          <div class="card small">
+            <div class="label">Language</div>
+            <div id="language">—</div>
+          </div>
+          <div class="card small">
+            <div class="label">Total Words Count</div>
+            <div id="totalWordsCount">0</div>
+          </div>
+          <div class="card small">
+            <div class="label">English Words Count</div>
+            <div id="englishWordsCount">0</div>
+          </div>
+          <div class="card small">
+            <div class="label">Tamil Words(Non Enligh)</div>
+            <div id="tamilWords">0</div>
+          </div>
+          <div class="card small">
+            <div class="label">English Words</div>
+            <div id="englishWords">0</div>
+          </div>
+          <div class="card highlight">
+            <div class="label">Score (total/english)</div>
+            <div id="score">—</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
