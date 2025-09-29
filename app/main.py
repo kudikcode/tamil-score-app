@@ -18,7 +18,6 @@ from fuzzy_tamil_util import FuzzyTamilMatcher
 matcher = FuzzyTamilMatcher("tamil_words_pure.txt")
 API_KEY = os.getenv("SARVAM_API_KEY") or os.getenv("SARVAMAI_API_KEY") or os.getenv("SARVAM_API_SUBSCRIPTION_KEY")
 
-API_KEY = "sk_ugt7f4qi_JMnL8tCrwnqrENB9rPy6kXP2"
 print("*******")
 print(API_KEY)
 
